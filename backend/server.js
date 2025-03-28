@@ -35,8 +35,8 @@ app.get("/",(req,res)=>{
 
 
 
-app.listen(port,()=>{
-    console.log(`Server is running on http://localhost:${port}`);
+app.listen(port,'0.0.0.0',()=>{
+    console.log(`Server is running on port${port}`);
 });
 
 //mongodb+srv://doodlesquash:aditya123@cluster0.kzknr.mongodb.net/food-app
