@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from './components/Sidebar/SIdebar'
+import Sidebar from './components/Sidebar/Sidebar'
 import Navbar from './components/Navbar/Navbar'
 import Add from './pages/Add/Add.jsx'
 import List from './pages/List/List.jsx'
