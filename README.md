@@ -6,33 +6,32 @@ Tomato is a full-stack food delivery application designed to provide a seamless 
 
 - 📍 **Restaurant & Menu Browsing** – Discover a variety of restaurants and their offerings.
 - 🛒 **Cart & Checkout** – Add items to the cart and proceed with an effortless checkout.
-- 🔐 **User Authentication** – Secure login and registration powered by Firebase.
-- 💳 **Payment Integration** – Supports Stripe & Razorpay for smooth and secure transactions.
+- 🔐 **User Authentication** – Secure login and registration using JWT Web Tokens.
+- 💳 **Payment Integration** – Supports Stripe for smooth and secure transactions.
 - 📦 **Order Tracking** – Keep track of orders with real-time updates.
 - 📱 **Responsive UI** – Designed for optimal performance across devices.
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js, Redux, Tailwind CSS
+- **Frontend:** React.js, CSS (Styling)
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **Authentication:** Firebase
-- **State Management:** Redux
-- **Payments:** Stripe, Razorpay
+- **Authentication:** JWT
+- **Payments:** Stripe
 
 ## 🌍 Deployment
 
 The application is deployed and accessible online:
 
-- **User Platform:** https://food-app-frontend-4yt4.onrender.com
-- **Administrative Dashboard:** (https://food-app-admin-2t72.onrender.com)
+- **User Platform:** [View Live](YOUR_CLIENT_DEPLOYED_LINK_HERE)
+- **Administrative Dashboard:** [View Live](YOUR_ADMIN_DEPLOYED_LINK_HERE)
 
 ## 📌 Installation & Setup
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/tomato.git
+   git clone https://github.com/DoodleSquash/tomato.git
    cd tomato
    ```
 
@@ -48,7 +47,7 @@ The application is deployed and accessible online:
 3. Set up environment variables:
 
    - Create a `.env` file in the root directory.
-   - Add API keys for Firebase, Stripe, and Razorpay.
+   - Add API keys for JWT, Stripe, and MongoDB.
 
 4. Start the development server:
 
@@ -64,19 +63,16 @@ The application is deployed and accessible online:
 
 ## 📸 Screenshots
 
-(Add screenshots of your app here)
+![1.login](https://github.com/user-attachments/assets/46233d0c-fa0b-46d1-a1bb-bd8280c49c81)
+![2.home](https://github.com/user-attachments/assets/0ce22129-d34c-4313-8c71-4d153ded56a7)
+![3.menu](https://github.com/user-attachments/assets/312a5f4b-d41b-4dca-ba3c-06b6cf68e2e5)
 
 ## 🛠️ Contributing
 
 Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ---
 
 ### 💡 Feedback & Support
 
-For any issues or suggestions, feel free to open an issue on GitHub or reach out to the development team.
-
+For any issues or suggestions, feel free to open an issue on GitHub or contact me at [(mailto\:adityalotankar06@gmail.com)](mailto\:adityalotankar06@gmail.com).
