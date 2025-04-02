@@ -32,16 +32,20 @@ const StoreContextProvider = (props) => {
         }
     }
 
-const getTotalCartAmount=()=>{
-    let totalAmount=0;
-    for(const items in cartItems){
-      if(cartItems[items]>0)
-      {let itemInfo=food_list.find((product)=>product._id===items);
-      totalAmount+=itemInfo.price*cartItems[items];
-    }
-    }
-    return totalAmount;
-}
+    const getTotalCartAmount = () => {
+        console.log(cartItems);
+    
+        let totalAmount = 0;
+        for (const items in cartItems) {
+            if (cartItems[items] > 0) {
+                let itemInfo = food_list.find((product) => product._id === items);
+                if (itemInfo) { // Check if itemInfo is not undefined
+                    totalAmount += itemInfo.price * cartItems[items];
+                }
+            }
+        }
+        return totalAmount;
+    };
 
      const fetchFoodList=async()=>{
         const response=await axios.get(url+"/api/food/list");
