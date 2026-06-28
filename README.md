@@ -1,7 +1,15 @@
-
 # 🍅 **Tomato – Food Delivery App**
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-000000?style=flat&logo=render&logoColor=white)](https://food-app-frontend-4yt4.onrender.com/)
+![React](https://img.shields.io/badge/React_19-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=flat&logo=mongodb&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-Payments-008CFF?style=flat&logo=stripe&logoColor=white)
+
 Tomato is a full-stack food delivery application designed to provide a seamless online food ordering experience. Users can explore restaurant menus, place orders, and track deliveries in real time, while the platform ensures secure authentication and smooth payment processing.
+
+---
 
 ## 🚀 **Features**
 
@@ -12,6 +20,8 @@ Tomato is a full-stack food delivery application designed to provide a seamless 
 - 📦 **Order Tracking** – Keep track of orders with real-time updates.
 - 📱 **Responsive UI** – Designed for optimal performance across devices.
 
+---
+
 ## 🛠️ **Tech Stack**
 
 - **Frontend:** React.js, CSS (Styling)
@@ -20,6 +30,8 @@ Tomato is a full-stack food delivery application designed to provide a seamless 
 - **Authentication:** JWT
 - **Payments:** Stripe
 
+---
+
 ## 🌍 **Deployment**
 
 The application is deployed and accessible online:
@@ -27,50 +39,60 @@ The application is deployed and accessible online:
 - **User Platform:** [View Live](https://food-app-frontend-4yt4.onrender.com/)
 - **Administrative Dashboard:** [View Live](https://food-app-admin-2t72.onrender.com/)
 
+---
+
 ## 📌 **Installation & Setup**
 
-1. Clone the repository:
+```bash
+# 1. Clone the repository
+git clone https://github.com/DoodleSquash/tomato.git
+cd tomato
 
-   ```bash
-   git clone https://github.com/DoodleSquash/tomato.git
-   cd tomato
-   ```
+# 2. Install dependencies
+cd frontend && npm install
+cd ../backend && npm install
+cd ../admin && npm install
+```
 
-2. Install dependencies for both frontend and backend:
+### **3. Set Up Environment Variables**
+Create a `.env` file in the `backend` directory:
+```env
+MONGODB_URI=your_mongodb_connection_string
+STRIPE_SECRET_KEY=your_stripe_secret_key
+JWT_SECRET=your_jwt_secret_token
+```
+> [!TIP]
+> **Stripe Testing:** Use test card `4242 4242 4242 4242` with any future expiry date and CVC `123`.
 
-   ```bash
-   cd client  # Navigate to frontend
-   npm install
-   cd ../server  # Navigate to backend
-   npm install
-   ```
+### **4. Start Local Development**
+Run the following commands in separate terminals to start each service:
+* **Backend Server:** `cd backend && npm run server`
+* **Frontend App:** `cd frontend && npm run dev`
+* **Admin Dashboard:** `cd admin && npm run dev`
 
-3. Set up environment variables:
-   - Create a `.env` file in the root directory.
-   - Add API keys for JWT, Stripe, and MongoDB.
+---
 
-4. Start the development server:
+## 🖼️ **Interface Preview**
 
-   ```bash
-   cd client
-   npm start
-   ```
+### Core Food Delivery Experience
+| **Landing Page Overview** | **Login & Authentication Portal** |
+| :---: | :---: |
+| <img src="screenshots/home.png" alt="Home Page" width="400" /> | <img src="screenshots/login.png" alt="Login Portal" width="400" /> |
 
-   ```bash
-   cd server
-   npm run dev
-   ```
+### Ordering & Cart
+| **Interactive Menu** | **Cart & Checkout** |
+| :---: | :---: |
+| <img src="screenshots/menu.png" alt="Menu" width="400" /> | <img src="screenshots/cart.png" alt="Cart" width="400" /> |
 
-## 📸 **Screenshots**
+### Responsive Design (Mobile View)
+<img src="screenshots/mobile home.png" alt="Mobile View" width="300" />
 
-- **1. Login:**
-  ![1.login](https://github.com/user-attachments/assets/46233d0c-fa0b-46d1-a1bb-bd8280c49c81)
+### Administrative Panel
+| **Admin Add Food Portal** |
+| :---: |
+| <img src="screenshots/admin add.png" alt="Admin Portal" width="600" /> |
 
-- **2. Home Page:**
-  ![2.home](https://github.com/user-attachments/assets/0ce22129-d34c-4313-8c71-4d153ded56a7)
-
-- **3. Restaurant Menu:**
-  ![3.menu](https://github.com/user-attachments/assets/312a5f4b-d41b-4dca-ba3c-06b6cf68e2e5)
+---
 
 ## 🛠️ **Contributing**
 

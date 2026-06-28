@@ -7,7 +7,7 @@ dotenv.config();
 
 
 // console.log("Stripe Secret Key in orderController.js:", process.env.STRIPE_SECRET_KEY);
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "sk_test_dummy_key_change_me");
 
 
 
